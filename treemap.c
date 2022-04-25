@@ -161,6 +161,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
+    //Un amigo lo probo en su visual y le andaban, aqui no :CCCC
     if (tree == NULL || tree->root == NULL) return NULL;
     TreeNode * aux = tree->root;
     tree->current = minimum(aux);
@@ -169,6 +170,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+  //Un amigo lo probo en su visual y le andaban, aqui no :CCCC
   if (tree == NULL || tree->root == NULL || tree->current == NULL) return NULL;
     if (tree->current->right != NULL) {
       TreeNode * aux = tree->current->right;
