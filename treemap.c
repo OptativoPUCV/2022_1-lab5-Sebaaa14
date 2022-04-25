@@ -143,7 +143,7 @@ Pair * firstTreeMap(TreeMap * tree) {
     
     tree->current = minimum(aux);
     
-    //if (tree->current == NULL) return NULL;
+    if (tree->current == NULL) return NULL;
     
     return tree->current->pair;
 }
